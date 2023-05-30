@@ -1,0 +1,50 @@
+
+/* TEXTO SOBRE A FATEC */
+
+.container{
+    
+    border-radius: 3px;
+    margin: 30px;
+    background: #FFFFFF;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    text-align: center; /* Alinhamento horizontal */
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento vertical */
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.texto{
+    text-align: justify;
+    font-size: 1.25rem;
+}
+.container h2{
+    text-align: start;
+}
+
+/* VIDEO DA FATEC*/
+
+.video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center; /* Alinhamento horizontal */
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento vertical */
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

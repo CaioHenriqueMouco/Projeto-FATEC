@@ -1,42 +1,51 @@
  body{
     background-color: #F0F0F0;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
-
 
 /*INFORMAÇOES*/
-.header-information{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
+
+.information-bg{
     background-color: #b20000;
-    color: white;
-    font-size: 1.25rem;
 }
 
-.header-information a {
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information a {
+    font-size: 1.25rem;
     color: white;
     text-decoration: none;
 }
 
 /*Menu*/
 
-.header{
+.header-bg{
     max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+.header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 10px 20px;
-    background-color: white;
-    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header img{
@@ -53,87 +62,53 @@ header img{
 }
 
 .header-menu a{
-    display: block;
+    display: inline-block;
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #393939;
-    padding: 10px 20px;
+    padding: 20px;
+    position: relative;
 }
 
-li > a:hover
-{
-transform: scale(1.1);
+.header-menu a:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: #b20000;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+.header-menu a:hover:after{
+    width: 75%;
 }
 
 
 @media (max-width: 1400px){
-    .header{
+    .header-bg{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
         padding: 5px;
     }
-    .header-information {
+    .information {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
         padding: 0 auto;
     }
-    .header-information a{
+    .information a{
         margin: 10px;
     }
 }
-
-
-/* TEXTO SOBRE A FATEC */
-
-.container{
-    max-width: 100%;
-    border-radius: 3px;
-    margin: 30px;
-    background: #FFFFFF;
-    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    text-align: center; /* Alinhamento horizontal */
-    display: flex;
-    align-items: center; /* Alinhamento vertical */
-    justify-content: center; /* Alinhamento vertical */
+@media (max-width: 800px){
+    .header-menu a:after{
+        display: none;
+    }
 }
 
-.container h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 2.5rem;
-}
-.texto{
-    text-align: justify;
-    font-size: 1.25rem;
-}
-
-
-/* VIDEO DA FATEC*/
-
-.video{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    margin: 20px;
-    text-align: center; /* Alinhamento horizontal */
-    display: flex;
-    align-items: center; /* Alinhamento vertical */
-    justify-content: center; /* Alinhamento vertical */
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 /*DADOS DA SECRETARIA*/
 
