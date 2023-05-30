@@ -2,6 +2,7 @@
     background-color: #F0F0F0;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -20,7 +21,6 @@
 }
 
 .header-information a {
-
     color: white;
     text-decoration: none;
 }
@@ -30,19 +30,18 @@
 .header{
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 10px 20px;
     background-color: white;
-    height: 100px;
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
 }
 
 header img{
     display: block;
     max-width: 100%;
-    height: auto
 }
 
 .header-menu{
@@ -56,12 +55,17 @@ header img{
 .header-menu a{
     display: block;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: #393939;
     padding: 10px 20px;
 }
+
+li > a:hover
+{
+transform: scale(1.1);
+}
+
 
 @media (max-width: 1400px){
     .header{
@@ -86,33 +90,49 @@ header img{
 
 .container{
     max-width: 100%;
-    height: 300px;
-    border: solid #5c0c0c;
     border-radius: 3px;
     margin: 30px;
-    display: inline-block;
+    background: #FFFFFF;
     box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
-    background: #D9D9D9;
     padding: 15px;
+    text-align: center; /* Alinhamento horizontal */
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento vertical */
 }
 
 .container h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 .texto{
     text-align: justify;
+    font-size: 1.25rem;
 }
 
 
 /* VIDEO DA FATEC*/
 
 .video{
-    display: contents;
-    align-items: center;
-    align-content: center;
-    border-color: #838282;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center; /* Alinhamento horizontal */
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento vertical */
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*DADOS DA SECRETARIA*/
@@ -120,8 +140,7 @@ header img{
 .dados{
     background-color: #1E1E1E;
     color: #F0F0F0;
-    display: grid;
-    grid-column: auto;
+    text-align: center;
 }
 .dados h2{
     margin: 10px;
@@ -138,22 +157,26 @@ header img{
     align-items: center;
 }
 
-.contato i{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 3px;
-    align-items: center;
+.dados a:hover{
+    color: white
 }
 
+.cursos, .contato{
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    justify-content: space-between;
+}
 
-
-
-
+.contato i{
+    margin: 10px;
+    padding: 3px;
+}
 
 /* FOOTER */
 
 footer{
+    
     clear: both;
 	background: #171515;
 	padding: 10px;
