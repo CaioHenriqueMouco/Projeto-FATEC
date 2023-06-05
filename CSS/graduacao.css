@@ -1,3 +1,4 @@
+
 /* IMAGEM DA FATEC */
 
 .container > img {
@@ -5,7 +6,7 @@
     margin: 0 auto;
     max-width: 100%;
 }
-/* TEXTO SOBRE A FATEC */
+
 
 .container{
     border-radius: 3px;
@@ -17,19 +18,15 @@
 
 .container h1 {
     text-align: center;
+    color: #3070EC;
     font-size: 2.5rem;
+}
+.container h2 {
+    text-align: start;
+    font-size: 1.5rem;
 }
 .texto{
     text-align: justify;
     font-size: 1.25rem;
     
 }
-.container h2{
-    text-align: start;
-}
-@media (max-width:800px){
-    .texto{
-        font-size: 1.1rem;
-    }
-}
-
