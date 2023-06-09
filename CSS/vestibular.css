@@ -10,9 +10,7 @@
 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
+margin: 0 auto;
 }
 
  a:hover 
@@ -22,8 +20,8 @@
 
 .cursos img
 {
-  width: 10vh;
-  height: 10vh;
+  width: 30vh;
+  height: 30vh;
 }
 
 a > img 
