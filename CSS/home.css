@@ -33,3 +33,25 @@
     }
 }
 
+.center
+{
+  display: flex;
+  justify-content: center;
+}
+
+#video 
+{ 
+  width: 75.64vh !important; 
+  height: 44.68vh; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    #video 
+    { 
+      width: 75.64vh !important; 
+      height: 25vh; 
+    }
+}
+
+

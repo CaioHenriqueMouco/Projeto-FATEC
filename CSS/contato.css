@@ -1,0 +1,66 @@
+/* TEXTO SOBRE A FATEC */
+.container{
+    border-radius: 3px;
+    margin: 30px;
+    background: #FFFFFF;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+}
+
+.container > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.texto{
+    text-align: justify;
+    font-size: 1.25rem;
+    
+}
+.container h2{
+    text-align: center;
+}
+
+/*CARD  FLIPPER*/
+
+.flipper{
+    margin: 0 auto;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.flipper img{
+    margin: 30px;
+    height: 40vh;
+    width: 50vh;
+}
+
+.front, .back{
+
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.front{
+    transform: rotateY(0deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.flipper:hover .front{
+    transform: rotateY(-180deg);
+}
+
+.flipper:hover .back{
+    transform: rotateY(0deg);
+}

@@ -1,0 +1,33 @@
+.container{
+    border-radius: 3px;
+    margin: 30px;
+    background: #FFFFFF;
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+}
+
+.cursos
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+}
+
+ a:hover 
+{
+  transform: scale(1.2);
+}
+
+.cursos img
+{
+  width: 10vh;
+  height: 10vh;
+}
+
+a > img 
+{ 
+  width: 20vh;
+  padding: 1.65vh;
+}
