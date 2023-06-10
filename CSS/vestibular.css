@@ -6,26 +6,54 @@
     padding: 15px;
 }
 
-.cursos
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.texto-imagens{
+  text-align: justify;
+  font-size: 1.25rem;
+  color: #838282;
+}
+
+.graduacao
 {
   display: flex;
   flex-wrap: wrap;
-margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
- a:hover 
+.graduacao a:hover 
 {
   transform: scale(1.2);
 }
 
-.cursos img
+.graduacao img
 {
   width: 30vh;
   height: 30vh;
 }
 
-a > img 
+.graduacao a > img 
 { 
-  width: 20vh;
   padding: 1.65vh;
+}
+
+
+
+.texto{
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+button{
+  color:#fff;
+  background-color: #b20000;
+  border-radius: 2px;
+  padding: 10px;
+  border: #b20000;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+  font-size: 1.15rem;
+  font-family: 'Poppins';
 }

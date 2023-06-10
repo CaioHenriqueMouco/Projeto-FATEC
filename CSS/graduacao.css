@@ -8,6 +8,8 @@
 }
 
 
+/* TEXTO DO CURSO */
+
 .container{
     border-radius: 3px;
     margin: 30px;
@@ -29,4 +31,37 @@
     text-align: justify;
     font-size: 1.25rem;
     
+}
+
+
+/* ÁREAS DO CURSO */
+
+.profissao
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profissao a:hover 
+{
+  transform: scale(1.2);
+}
+
+.profissao img
+{
+  width: 30vh;
+  height: 30vh;
+}
+
+.profissao a > img 
+{ 
+  padding: 1.65vh;
+}
+
+.texto-profissoes{
+    text-align: justify;
+    font-size: 1.25rem;
+    color: #838282;
 }
