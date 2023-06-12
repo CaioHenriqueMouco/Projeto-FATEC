@@ -64,3 +64,11 @@
 .flipper:hover .back{
     transform: rotateY(0deg);
 }
+
+.container a{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+.container a:hover{
+    color: #b20000;
+}
