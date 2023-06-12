@@ -25,6 +25,18 @@
     text-align: center;
 }
 
+/*MAPA*/
+
+#mapa iframe{
+    margin-bottom: 20px;
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 0 3px #1E1E1E;
+}
+
+
+
+
 /*CARD  FLIPPER*/
 
 .flipper{
